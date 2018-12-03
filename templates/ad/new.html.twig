@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formAnnonce 'bootstrap_4_layout.html.twig' %}
+
+
+{% block title %}Nos magnifiques annonces!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Créer une nouvelle annonce</h1>
+
+        {{ form_start(formAnnonce) }}
+
+        {{ form_widget(formAnnonce)}}
+
+        <button type="submit" class="btn btn-success">
+             Ajouter mon produit
+        </button>
+
+        {{ form_end(formAnnonce) }}
+    </div>
+
+{% endblock %}
