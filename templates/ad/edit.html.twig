@@ -2,20 +2,20 @@
 
 {% form_theme formAnnonce 'bootstrap_4_layout.html.twig' %}
 
-{% block title %}Nos magnifiques annonces!{% endblock %}
+{% block title %}Modification d'annonces!{% endblock %}
 
 {% form_theme formAnnonce 'ad/_collection.html.twig' %}
 
 {% block body %}
     <div class="container">
-        <h1>Créer une nouvelle annonce</h1>
+        <h1>Modifier l'annonce {{ ad.title }}</h1>
 
         {{ form_start(formAnnonce) }}
 
         {{ form_widget(formAnnonce)}}
 
         <button type="submit" class="btn btn-success">
-             Ajouter mon produit
+            Modifier mon produit
         </button>
 
         {{ form_end(formAnnonce) }}
@@ -27,7 +27,6 @@
 
 {% block javascripts %}
 
- <script src="/js/form.js"></script>
+    <script src="/js/form.js"></script>
 
 {% endblock %}
-
