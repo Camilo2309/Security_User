@@ -44,6 +44,7 @@ class AdController extends AbstractController
     {
         $ad = new Ad();
 
+
         $form = $this->createForm(AnnonceType::class, $ad);
 
         // HandleRequest Permet d analyser la requete http, il analyse si le form a bien été soumis,
